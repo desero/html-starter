@@ -5,7 +5,7 @@
   "scripts": {
     "build": "NODE_ENV=production webpack -p --mode production --config webpack.prod.babel.js",
     "dev": "webpack-dev-server --mode development --config webpack.dev.babel.js --open",
-    "lint": "eslint . && sass-lint -v -q"
+    "lint": "eslint ./src && sass-lint -v -q && htmlhint ./src/**/*.html"
   },
   "author": "desero",
   "license": "ISC",
@@ -28,6 +28,7 @@
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.0.4",
+    "htmlhint": "^0.9.13",
     "node-sass": "^4.7.2",
     "postcss-cssnext": "^3.1.0",
     "postcss-loader": "^2.1.1",
