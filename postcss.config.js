@@ -5,9 +5,9 @@ module.exports = ({ file, options, env }) => ({
     'postcss-cssnext': {
       warnForDuplicates: false,
     },
-    'postcss-pxtorem': {
-      rootValue: 16,
-    },
+    // 'postcss-pxtorem': {
+    //   rootValue: 16,
+    // },
     cssnano: env === 'production' ? {} : false,
   },
 })

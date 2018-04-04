@@ -30,7 +30,7 @@ rules:
   property-sort-order:
     - 1
     -
-      order: [display, margin]
+      order: [display, position, margin, padding, width, max-width, height, top, right, bottom, left, z-index]
       ignore-custom-properties: true
   space-after-colon: 2
   variable-for-property:

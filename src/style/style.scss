@@ -2,4 +2,8 @@
 
 body {
   transition: ease position .2s;
+
+  @include breakpoint(768px) {
+    transition: ease position 1s;
+  }
 }
